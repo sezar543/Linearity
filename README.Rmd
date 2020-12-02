@@ -1,0 +1,69 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Linearity
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Linearity is to check if three given vectors, that are of the same length, are linearly independent. If they are independent, the function returns true, otherwise false.
+
+This package consists of one single function, lin_indep_threevectors. 
+
+We used `use_r`, `load_all()` and `use_readme_rmd()` from `devtools` to create the files in the package.
+We used `use_testthat()` , `use_test("lin_indep_threevectors")` and `test()` from `usethis` to create a test file for the function lin_indep_threevectors. 
+
+We wrote the function `lin_indep_threevectors` manually.
+
+
+## Installation
+
+You can install the released version of Linearity from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("Linearity")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("sezar543/Linearity")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Linearity)
+lin_indep_threevectors(c(2,1,1),c(3,2,1),c(5,5,6))
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

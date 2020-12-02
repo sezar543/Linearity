@@ -1,0 +1,21 @@
+Package: Linearity
+Title: The package aims to check linear dependencies of vectors of the same length
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Reza",
+           family = "Sadoughian",
+           role = c("aut", "cre"),
+           email = "reza.sadoughian@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The package consists of one function "lin_indep_threevectors" that checks if three vectors of the same length are linearly independent.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
+Imports: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
